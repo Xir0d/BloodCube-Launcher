@@ -1,10 +1,10 @@
 {
-    "name": "Selvania-Launcher",
-    "preductname": "Selvania Launcher",
-    "version": "1.0.2",
-    "description": "Launcher Mincraft custom (crack, premium)",
+    "name": "WorldNations-Launcher",
+    "preductname": "WorldNations-Launcher",
+    "version": "1.0.0",
+    "description": "Official Minecraft Launcher for World Nations server's",
     "main": "src/app.js",
-    "author": "Luuxis",
+    "author": "Luuxis & Pacome",
     "url": "http://launcher.selvania.fr",
     "engines": {
         "node": "16.x.x"
