@@ -2,7 +2,7 @@
     "name": "WorldNations-Launcher",
     "preductname": "WorldNations-Launcher",
     "version": "1.0.0",
-    "description": "Official Minecraft Launcher for World Nations server's",
+    "description": "Official Minecraft Launcher for WorldNations server's",
     "main": "src/app.js",
     "author": "Luuxis & Pacome",
     "url": "http://launcher.selvania.fr",
@@ -31,6 +31,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/luuxis/Selvania-Launcher.git"
+        "url": "git+https://github.com/Xir0d/WorldNations-Launcher.git"
     }
 }
