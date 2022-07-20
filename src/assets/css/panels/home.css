@@ -10,6 +10,7 @@
 }
 
 .player-head {
+    animation: float 6s ease-in-out infinite;
     margin: auto 30px;
     background-image: url("../../images/default/setve.png");
     background-size: cover;

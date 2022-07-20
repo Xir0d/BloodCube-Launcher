@@ -22,36 +22,33 @@
     border: none;
     padding: 15% 15%;
     margin: 5% 6.5%;
-    background-color: #262626;
-    background-size: 50%;
-    box-shadow: 0 0 5px #ffffff;
-    color: #ffffff;
+    box-shadow: 0 0 15px 0px #006e47;
     font: normal normal bold 19px/29px Poppins;
-    
+    cursor: pointer;
+    transition: 1s;
 }
 
 button.mojang.login-type-btn {
-    background:url(..\..\images\logo\mojang.png) no-repeat center;
+    background: no-repeat center url(../../images/logo/mojang.png);
+    background-size: 100%; 
 }
 
-body > div.panels > div.panel.login.active > div > div.login-card > div > button.mojang.login-type-btn {
-    background:url(..\..\images\icon.ico) no-repeat center;
+button.microsoft.login-type-btn {
+    background: no-repeat center url(../../images/logo/microsoft.png);
+    background-size: 40%;
 }
 
 .login-type-btn:hover {
-    background-color: #006e47;
-    box-shadow: 0 0 5px #006e47;
+    box-shadow: 0 0 50px #006e47;
 }
 
 .login-type-btn:disabled {
-    background-color: #00bd7a;
-    box-shadow: 0 0 5px #00bd7a;
+    box-shadow: 0 0 15px 0px #006e47;
     cursor: default;
 }
 
 .login-type-btn:disabled:hover {
-    background-color: #00bd7a;
-    box-shadow: 0 0 5px #00bd7a;
+    box-shadow: 0 0 50px #006e47;
 }
 
 .login-card-mojang {
@@ -78,6 +75,7 @@ body > div.panels > div.panel.login.active > div > div.login-card > div > button
 }
 
 .login-mojang-input {
+    animation: float 6s ease-in-out infinite;
     font-family: 'Poppins';
     letter-spacing: 2px;
     color: #fff;
