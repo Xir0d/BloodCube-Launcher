@@ -10,9 +10,8 @@
 }
 
 .player-head {
-    animation: float 6s ease-in-out infinite;
     margin: auto 30px;
-    background-image: url("../../images/default/setve.png");
+    background-image: url("../../images/default/steve.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

@@ -75,7 +75,6 @@ button.microsoft.login-type-btn {
 }
 
 .login-mojang-input {
-    animation: float 6s ease-in-out infinite;
     font-family: 'Poppins';
     letter-spacing: 2px;
     color: #fff;
