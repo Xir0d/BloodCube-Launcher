@@ -2,6 +2,6 @@
 
 <h1 align="center">BloodCube's Launcher</h1>
 
-[<p align="center">
+<p align="center">
 Launcher Officiel du Serveur BloodCube
 </p>
