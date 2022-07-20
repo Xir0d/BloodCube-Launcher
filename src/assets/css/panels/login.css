@@ -22,7 +22,7 @@
     border: none;
     padding: 15% 15%;
     margin: 5% 6.5%;
-    box-shadow: 0 0 15px 0px #006e47;
+    box-shadow: 0 0 15px 0px #000000;
     font: normal normal bold 19px/29px Poppins;
     cursor: pointer;
     transition: 1s;
@@ -43,7 +43,7 @@ button.microsoft.login-type-btn {
 }
 
 .login-type-btn:disabled {
-    box-shadow: 0 0 15px 0px #006e47;
+    box-shadow: 0 0 15px 0px #000000;
     cursor: default;
 }
 
@@ -58,7 +58,7 @@ button.microsoft.login-type-btn {
     transform: translate(-50%, -50%);
     width: 35%;
     background: #121212;
-    padding: 0 20px;
+    padding: 0 -14px;
     font: normal normal bold 19px/29px Poppins;
     color: #E1E1E1;
     border-radius: 15px;
@@ -76,10 +76,7 @@ button.microsoft.login-type-btn {
 
 .login-mojang-input {
     font-family: 'Poppins';
-    letter-spacing: 2px;
     color: #fff;
-    border: solid 0px rgba(0, 0, 0, 0);
-    border-radius: 30px;
     background-color: #373737;
     padding: 0.375rem 0.75rem;
 }
@@ -90,21 +87,21 @@ button.microsoft.login-type-btn {
 }
 
 .btn-option-login {
-    width: 100%;
-    display: grid;
     text-align: center;
+    margin: 5% 0% 5%;
 }
 
-.login-btn {
-    border-radius: 15px;
+.cancel {
     border: none;
-    margin: 2% 0;
-    height: 2em;
-    background-color: #00bd7a;
-    box-shadow: 0 0 5px #00bd7a;
-    color: #121212;
+    width: 42.5%;
+    height: 35px;
+    /* padding: 6px 60px; */
+    background-color: #ffffff00;
+    color: #F1F1F1;
     font: normal normal bold 19px/29px Poppins;
-    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0 0 15px #000000;
+    border-radius: 15px;
 }
 
 .login-btn:hover {
@@ -112,12 +109,17 @@ button.microsoft.login-type-btn {
     box-shadow: 0 0 5px #006e47;
 }
 
-.cancel {
+.login-btn {
+    border-radius: 15px;
+    width: 42.5%;
+    height: 35px;
     border: none;
-    background-color: #ffffff00;
-    color: #F1F1F1;
+    background-color: #00bd7a;
     font: normal normal bold 19px/29px Poppins;
     cursor: pointer;
+    transition: 0.5s;
+    margin: 0% 0% 0% 10%;
+    box-shadow: 0 0 10px #00bd7a;
 }
 
 .cancel:hover {
