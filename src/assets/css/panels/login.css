@@ -1,32 +1,41 @@
 .login-card {
     position: absolute;
-    top: 52%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 35%;
+    width: 70%;
     background: #121212;
     padding: 20px;
-    font: normal normal bold 19px/29px Poppins;
+    font: normal normal 19px/29px Poppins;
     color: #E1E1E1;
     border-radius: 15px;
     text-align: center;
 }
 
 .login-type {
-    display: grid;
-    padding: 0 7%;
+    display: contents;
+    
 }
 
 .login-type-btn {
-    border-radius: 15px;
+    border-radius: 10%;
     border: none;
-    margin: 2% 0;
-    height: 2em;
-    background-color: #00bd7a;
-    box-shadow: 0 0 5px #00bd7a;
-    color: #121212;
+    padding: 15% 15%;
+    margin: 5% 6.5%;
+    background-color: #262626;
+    background-size: 50%;
+    box-shadow: 0 0 5px #ffffff;
+    color: #ffffff;
     font: normal normal bold 19px/29px Poppins;
-    cursor: pointer;
+    
+}
+
+button.mojang.login-type-btn {
+    background:url("..\..\images\logo\mojang.png") no-repeat center;
+}
+
+button.mojang.login-type-btn {
+    background:url("..\..\images\logo\microsoft.png") no-repeat center;
 }
 
 .login-type-btn:hover {
