@@ -1,14 +1,14 @@
 /**
- * @author Luuxis
- * @license CC-BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/
- */
+* @author Luuxis
+* @license CC-BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/
+*/
 
 'use strict';
 
 import { database, changePanel, addAccount, accountSelect } from '../utils.js';
 const { Mojang } = require('minecraft-java-core');
 const { ipcRenderer } = require('electron');
-
+ 
 class Login {
     static id = "login";
     async init(config) {
@@ -17,7 +17,7 @@ class Login {
         if (this.config.online) this.getOnline()
         else this.getOffline()
     }
-
+ 
     getOnline() {
         console.log(`Initializing microsoft Panel...`)
         console.log(`Initializing mojang Panel...`)
@@ -117,43 +117,31 @@ class Login {
             document.querySelector(".login-card-mojang").style.display = "none";
         })
 
-        window.addEventListener('keypress', function (e) {
-            if (e.key === 'Enter') {
-                cancelMojangBtn.disabled = true;
-                loginBtn.disabled = true;
-                mailInput.disabled = true;
-                passwordInput.disabled = true;
-                infoLogin.innerHTML = "Connexion en cours...";
+        loginBtn.addEventListener("click", () => {
+            cancelMojangBtn.disabled = true;
+            loginBtn.disabled = true;
+            mailInput.disabled = true;
+            passwordInput.disabled = true;
+            infoLogin.innerHTML = "Connexion en cours... 🌍";
 
-                if (mailInput.value == "") {
-                    infoLogin.innerHTML = "Entrez votre adresse email"
-                    cancelMojangBtn.disabled = false;
-                    loginBtn.disabled = false;
-                    mailInput.disabled = false;
-                    passwordInput.disabled = false;
-                    return
-                }
-    
-                if (passwordInput.value == "") {
-                    infoLogin.innerHTML = "Entrez votre mot de passe"
-                    cancelMojangBtn.disabled = false;
-                    loginBtn.disabled = false;
-                    mailInput.disabled = false;
-                    passwordInput.disabled = false;
-                    return
-                }
+
+            if (mailInput.value == "") {
+                infoLogin.innerHTML = "Entrez votre adresse email ✉️"
+                cancelMojangBtn.disabled = false;
+                loginBtn.disabled = false;
+                mailInput.disabled = false;
+                passwordInput.disabled = false;
+                return
             }
 
-            else if (e.key !== 'Enter') {
-                if (mailInput.value == "") {
-                    return
-                }
-                
-                if (passwordInput.value == "") {
-                    return
-                }
+            if (passwordInput.value == "") {
+                infoLogin.innerHTML = "Entrez votre mot de passe 🔑"
+                cancelMojangBtn.disabled = false;
+                loginBtn.disabled = false;
+                mailInput.disabled = false;
+                passwordInput.disabled = false;
+                return
             }
-
 
             Mojang.getAuth(mailInput.value, passwordInput.value).then(account_connect => {
                 let account = {
@@ -188,11 +176,11 @@ class Login {
                 loginBtn.disabled = false;
                 mailInput.disabled = false;
                 passwordInput.disabled = false;
-                infoLogin.innerHTML = 'Adresse E-mail ou mot de passe invalide'
+                infoLogin.innerHTML = 'E-Mail / MDP Invalide ❌'
             })
         })
     }
- 
+
     loginOffline() {
         let mailInput = document.querySelector('.Mail')
         let passwordInput = document.querySelector('.Password')
@@ -222,7 +210,7 @@ class Login {
 
 
             if (mailInput.value == "") {
-                infoLogin.innerHTML = "Entrez votre adresse email"
+                infoLogin.innerHTML = "Entrez votre adresse email / Nom d'utilisateur"
                 cancelMojangBtn.disabled = false;
                 loginBtn.disabled = false;
                 mailInput.disabled = false;
