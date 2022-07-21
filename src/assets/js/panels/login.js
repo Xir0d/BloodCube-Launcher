@@ -117,31 +117,43 @@ class Login {
             document.querySelector(".login-card-mojang").style.display = "none";
         })
 
-        loginBtn.addEventListener("click", () => {
-            cancelMojangBtn.disabled = true;
-            loginBtn.disabled = true;
-            mailInput.disabled = true;
-            passwordInput.disabled = true;
-            infoLogin.innerHTML = "Connexion en cours...";
+        window.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                cancelMojangBtn.disabled = true;
+                loginBtn.disabled = true;
+                mailInput.disabled = true;
+                passwordInput.disabled = true;
+                infoLogin.innerHTML = "Connexion en cours...";
 
-
-            if (mailInput.value == "") {
-                infoLogin.innerHTML = "Entrez votre adresse email"
-                cancelMojangBtn.disabled = false;
-                loginBtn.disabled = false;
-                mailInput.disabled = false;
-                passwordInput.disabled = false;
-                return
+                if (mailInput.value == "") {
+                    infoLogin.innerHTML = "Entrez votre adresse email"
+                    cancelMojangBtn.disabled = false;
+                    loginBtn.disabled = false;
+                    mailInput.disabled = false;
+                    passwordInput.disabled = false;
+                    return
+                }
+    
+                if (passwordInput.value == "") {
+                    infoLogin.innerHTML = "Entrez votre mot de passe"
+                    cancelMojangBtn.disabled = false;
+                    loginBtn.disabled = false;
+                    mailInput.disabled = false;
+                    passwordInput.disabled = false;
+                    return
+                }
             }
 
-            if (passwordInput.value == "") {
-                infoLogin.innerHTML = "Entrez votre mot de passe"
-                cancelMojangBtn.disabled = false;
-                loginBtn.disabled = false;
-                mailInput.disabled = false;
-                passwordInput.disabled = false;
-                return
+            else if (e.key !== 'Enter') {
+                if (mailInput.value == "") {
+                    return
+                }
+                
+                if (passwordInput.value == "") {
+                    return
+                }
             }
+
 
             Mojang.getAuth(mailInput.value, passwordInput.value).then(account_connect => {
                 let account = {
@@ -180,7 +192,7 @@ class Login {
             })
         })
     }
-
+ 
     loginOffline() {
         let mailInput = document.querySelector('.Mail')
         let passwordInput = document.querySelector('.Password')
