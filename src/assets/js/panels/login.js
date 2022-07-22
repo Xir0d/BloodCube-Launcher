@@ -125,6 +125,8 @@ class Login {
         cancelMojangBtn.addEventListener("click", () => {
             document.querySelector(".login-card").style.display = "block";
             document.querySelector(".login-card-mojang").style.display = "none";
+            document.getElementById('email-input').value = '';
+            document.getElementById('mdp-input').value = '';
         })
 
         loginBtn.addEventListener("click", () => {
@@ -134,13 +136,15 @@ class Login {
             mailInput.disabled = true;
             passwordInput.disabled = true;
             infoLogin.innerHTML = "Connexion en cours... 🌍";
-
-
+            setTimeout(() => {
+                document.getElementById('mdp-input').value = '';
+              }, 100)
+            
             if (mailInput.value == "") {
                 infoLogin.innerHTML = "Entrez votre adresse email ✉️"
                 setTimeout(() => {
                     infoLogin.hidden = true;
-                  }, 3000)
+                  }, 1500)
                 cancelMojangBtn.disabled = false;
                 loginBtn.disabled = false;
                 mailInput.disabled = false;
@@ -152,12 +156,13 @@ class Login {
                 infoLogin.innerHTML = "Entrez votre mot de passe 🔑"
                 setTimeout(() => {
                     infoLogin.hidden = true;
-                  }, 3000)
+                  }, 1500)
                 cancelMojangBtn.disabled = false;
                 loginBtn.disabled = false;
                 mailInput.disabled = false;
                 passwordInput.disabled = false;
                 return
+
             }
 
             Mojang.getAuth(mailInput.value, passwordInput.value).then(account_connect => {
@@ -196,7 +201,7 @@ class Login {
                 infoLogin.innerHTML = 'E-Mail / MDP Invalide ❌'
                 setTimeout(() => {
                     infoLogin.hidden = true;
-                  }, 3000)
+                  }, 1500)
             })
         })
     }
