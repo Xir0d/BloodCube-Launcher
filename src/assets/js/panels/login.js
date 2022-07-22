@@ -107,6 +107,16 @@ class Login {
         let loginBtn = document.querySelector(".login-btn")
         let mojangBtn = document.querySelector('.mojang')
 
+/*Connexion avec la touche ENTER */
+
+        document.addEventListener('keypress', function (event) {
+            if (event.keyCode === 13) {
+                console.log('ça marche')
+                document.getElementById('login-btn').click();
+            }
+        })
+        
+
         mojangBtn.addEventListener("click", () => {
             document.querySelector(".login-card").style.display = "none";
             document.querySelector(".login-card-mojang").style.display = "block";
@@ -118,6 +128,7 @@ class Login {
         })
 
         loginBtn.addEventListener("click", () => {
+            infoLogin.hidden = false;
             cancelMojangBtn.disabled = true;
             loginBtn.disabled = true;
             mailInput.disabled = true;
@@ -127,6 +138,9 @@ class Login {
 
             if (mailInput.value == "") {
                 infoLogin.innerHTML = "Entrez votre adresse email ✉️"
+                setTimeout(() => {
+                    infoLogin.hidden = true;
+                  }, 3000)
                 cancelMojangBtn.disabled = false;
                 loginBtn.disabled = false;
                 mailInput.disabled = false;
@@ -136,6 +150,9 @@ class Login {
 
             if (passwordInput.value == "") {
                 infoLogin.innerHTML = "Entrez votre mot de passe 🔑"
+                setTimeout(() => {
+                    infoLogin.hidden = true;
+                  }, 3000)
                 cancelMojangBtn.disabled = false;
                 loginBtn.disabled = false;
                 mailInput.disabled = false;
@@ -177,6 +194,9 @@ class Login {
                 mailInput.disabled = false;
                 passwordInput.disabled = false;
                 infoLogin.innerHTML = 'E-Mail / MDP Invalide ❌'
+                setTimeout(() => {
+                    infoLogin.hidden = true;
+                  }, 3000)
             })
         })
     }
