@@ -10,10 +10,12 @@
     color: #E1E1E1;
     border-radius: 15px;
     text-align: center;
+    
 }
 
 .login-type {
     display: contents;
+    
     
 }
 
@@ -26,11 +28,13 @@
     font: normal normal bold 19px/29px Poppins;
     cursor: pointer;
     transition: 1s;
+    
+    
 }
 
 button.mojang.login-type-btn {
     background: no-repeat center url(../../images/logo/mojang.png);
-    background-size: 100%; 
+    background-size: 100%;
 }
 
 button.microsoft.login-type-btn {
@@ -63,6 +67,7 @@ button.microsoft.login-type-btn {
     color: #E1E1E1;
     border-radius: 15px;
     display: none;
+    
 }
 
 .card-body {
