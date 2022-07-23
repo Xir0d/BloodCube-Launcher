@@ -1,11 +1,11 @@
 {
-    "name": "BloodCube-Launcher",
-    "preductname": "BloodCube-Launcher",
+    "name": "BloodCube Launcher",
+    "preductname": "BloodCube Launcher",
     "version": "1.0.0",
     "description": "Official Minecraft Launcher for BloodCube server's",
     "main": "src/app.js",
     "author": "Luuxis & Pacome",
-    "url": "http://launcher.selvania.fr",
+    "url": "http://launcher.bloodcube.go.yo.fr",
     "engines": {
         "node": "16.x.x"
     },
