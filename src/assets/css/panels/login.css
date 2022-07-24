@@ -10,13 +10,19 @@
     color: #E1E1E1;
     border-radius: 15px;
     text-align: center;
-    
+    transition: 1s;
+}
+
+.login-card {
+    opacity: 1;
+}
+
+.login-card:opacity {
+    opacity: 1;
 }
 
 .login-type {
-    display: contents;
-    
-    
+    display: contents; 
 }
 
 .login-type-btn {
@@ -27,10 +33,9 @@
     box-shadow: 0 0 15px 0px #000000;
     font: normal normal bold 19px/29px Poppins;
     cursor: pointer;
-    transition: 1s;
-    
-    
 }
+
+
 
 button.mojang.login-type-btn {
     background: no-repeat center url(../../images/logo/mojang.png);
@@ -67,7 +72,11 @@ button.microsoft.login-type-btn {
     color: #E1E1E1;
     border-radius: 15px;
     display: none;
-    
+    transition: 1s;
+}
+
+.login-card-mojang:opacity {
+    opacity: 1s;
 }
 
 .card-body {

@@ -69,6 +69,7 @@
     color: #121212;
     margin: 15px 0;
     box-shadow: 0 0 5px #00bd7a;
+    cursor: pointer;
 }
 
 .download-content {
