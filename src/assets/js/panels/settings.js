@@ -61,6 +61,7 @@ class Settings {
         })
     }
 
+    
     async initRam() {
         let ramDatabase = (await this.database.get('1234', 'ram'))?.value;
         let totalMem = Math.trunc(os.totalmem() / 1073741824 * 10) / 10;
