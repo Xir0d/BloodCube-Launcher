@@ -315,3 +315,8 @@
 .online.off {
     background-color: #FF0409;
 }
+
+.icon-settings:before { 
+    content: url('https://api.iconify.design/akar-icons/settings-horizontal.svg?color=%23f7f5f2');
+    background-color: #3B3B3B;
+}
