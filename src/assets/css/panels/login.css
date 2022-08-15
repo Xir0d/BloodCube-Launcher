@@ -7,7 +7,7 @@
     background: #121212;
     padding: 20px;
     font: normal normal 19px/29px Poppins;
-    color: #E1E1E1;
+    color: #F7F5F2;
     border-radius: 15px;
     text-align: center;
     transition: 1s;
@@ -48,7 +48,7 @@ button.microsoft.login-type-btn {
 }
 
 .login-type-btn:hover {
-    box-shadow: 0 0 50px #006e47;
+    box-shadow: 0 0 50px #FFE000;
 }
 
 .login-type-btn:disabled {
@@ -57,7 +57,7 @@ button.microsoft.login-type-btn {
 }
 
 .login-type-btn:disabled:hover {
-    box-shadow: 0 0 50px #006e47;
+    box-shadow: 0 0 50px #FFE000;
 }
 
 .login-card-mojang {
@@ -69,7 +69,7 @@ button.microsoft.login-type-btn {
     background: #121212;
     padding: 0 -14px;
     font: normal normal bold 19px/29px Poppins;
-    color: #E1E1E1;
+    color: #F7F5F2;
     border-radius: 15px;
     display: none;
     transition: 1s;
@@ -90,7 +90,7 @@ button.microsoft.login-type-btn {
 
 .login-mojang-input {
     font-family: 'Poppins';
-    color: #fff;
+    color: #F7F5F2;
     background-color: #373737;
     padding: 0.375rem 0.75rem;
 }
@@ -109,9 +109,8 @@ button.microsoft.login-type-btn {
     border: none;
     width: 42.5%;
     height: 35px;
-    /* padding: 6px 60px; */
     background-color: #ffffff00;
-    color: #F1F1F1;
+    color: #F7F5F2;
     font: normal normal bold 19px/29px Poppins;
     transition: 0.5s;
     box-shadow: 0 0 15px #000000;
@@ -119,8 +118,8 @@ button.microsoft.login-type-btn {
 }
 
 .login-btn:hover {
-    background-color: #006e47;
-    box-shadow: 0 0 5px #006e47;
+    background-color: #FFE000;
+    box-shadow: 0 0 5px #FFE000;
 }
 
 .login-btn {
@@ -128,19 +127,18 @@ button.microsoft.login-type-btn {
     width: 42.5%;
     height: 35px;
     border: none;
-    background-color: #00bd7a;
+    background-color: #d24d57;
     font: normal normal bold 19px/29px Poppins;
     cursor: pointer;
     transition: 0.5s;
     margin: 0% 0% 0% 10%;
-    box-shadow: 0 0 10px #00bd7a;
 }
 
 .cancel:hover {
-    color: #373737;
+    color: #3B3B3B;
 }
 
 .cancel:hover:disabled {
-    color: #F1F1F1;
+    color: #F7F5F2;
     cursor: default;
 }
