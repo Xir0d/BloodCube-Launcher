@@ -5,27 +5,19 @@
     height: 70px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    background: #00000080;
+    background: #1F1F1F;
     display: flex;
     justify-content: center;
 }
 
 .tab-btn-css {
-    border-radius: 23px;
-    width: 160px;
-    height: 37px;
-    margin: auto 30px;
-    background: #d24d57;
+    border-radius: 15px;
+    width: 350px;
+    height: 50px;
+    margin: auto 45px;
+    background: #d24d38;
     font: normal normal bold 20px/25px Poppins;
     cursor: pointer;
-    box-shadow: 0 0 5px #d24d57;
-    outline: none;
-    transition: 1s;
-}
-
-.tab-btn-css:hover {
-    background: #006e47;
-    box-shadow: 0 0 5px #006e47;
 }
 
 .active-tab-btn {
@@ -222,7 +214,7 @@
     width: 20px;
     height: 10px;
     background: #F7F5F2;
-    border: 4px solid #d24d57;
+    border: 4px solid #d24d38;
     transition: background-color .2s, border .2s;
     border-radius: 18px;
     cursor: pointer;
@@ -231,7 +223,7 @@
 .slider-touch-left span:after,
 .slider-touch-right span:after {
     content: attr(value);
-    color: #d24d57;
+    color: #d24d38;
     font: normal normal bold 12px/18px Poppins;
     white-space: nowrap;
     pointer-events: none;
@@ -259,7 +251,7 @@
     display: block;
     height: 100%;
     width: 0%;
-    background: #d24d57;
+    background: #d24d38;
     transition: background-color .2s;
 }
 
@@ -289,7 +281,7 @@
     font: normal normal bold 13px/20px Poppins;
     border-radius: 18px;
     padding: 8px 30px;
-    background-color: #d24d57;
+    background-color: #d24d38;
     cursor: pointer;
     margin-left: 20px;
     transition: color .2s, background-color .2s;
@@ -305,7 +297,7 @@
     font: normal normal bold 13px/20px Poppins;
     border-radius: 18px;
     padding: 8px 30px;
-    background-color: #d24d57;
+    background-color: #d24d38;
     cursor: pointer;
     margin-left: 20px;
     transition: color .2s, background-color .2s;
@@ -405,7 +397,7 @@
 
 .select {
     border-radius: 40px;
-    background-color: #d24d57;
+    background-color: #d24d38;
     font: normal normal normal 12px/18px Poppins;
     transition: color .2s, box-shadow .2s;
     border: none;
@@ -446,7 +438,7 @@
 }
 
 .checkbox-settings:checked+label {
-    background-color: #d24d57;
+    background-color: #d24d38;
 }
 
 .checkround {
